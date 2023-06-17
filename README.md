@@ -41,6 +41,7 @@ Targets:
   help                  Display this help
   test-unit             Run unit-tests
   test-integration      Run integration-tests
+  test                  Run unit and integration tests
   build                 Build binary
   verify                tests and builds
   image                 build docker image
@@ -71,8 +72,11 @@ Usage:
   helm-changelog [flags]
 
 Flags:
-  -h, --help               help for helm-changelog
-  -v, --verbosity string   Log level (debug, info, warn, error, fatal, panic (default "warning")
+  -f, --filename string           Filename for changelog (default "Changelog.md")
+  -h, --help                      help for helm-changelog
+  -r, --release-template string   Path to a Go template used for each release
+  -v, --verbosity string          Log level (debug, info, warn, error, fatal, panic) (default "warning")
+      --version                   version for helm-changelog
 
 # Run helm-changelog creator with default params
 $ ./bin/helm-changelog

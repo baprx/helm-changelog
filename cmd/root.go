@@ -18,8 +18,9 @@ var releaseTemplatePath string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "helm-changelog",
-	Short: "Create changelogs for Helm Charts, based on git history",
+	Use:     "helm-changelog",
+	Short:   "Create changelogs for Helm Charts, based on git history",
+	Version: "0.1.0",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		log := logrus.StandardLogger()
