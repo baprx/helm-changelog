@@ -20,7 +20,7 @@ var releaseTemplatePath string
 var rootCmd = &cobra.Command{
 	Use:     "helm-changelog",
 	Short:   "Create changelogs for Helm Charts, based on git history",
-	Version: "0.1.0",
+	Version: "0.1.1",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		log := logrus.StandardLogger()
